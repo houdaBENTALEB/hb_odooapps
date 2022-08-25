@@ -12,6 +12,9 @@
     'summary': 'This module allows to add cash In/Out popup.',
 
     'description': "Cach In/Out popup",
+    'license': 'AGPL-3',
+
+    'support': 'houda.bentaleb@gmail.com',
 
     'depends': [
         'point_of_sale',
