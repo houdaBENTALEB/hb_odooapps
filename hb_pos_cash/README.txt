@@ -1,7 +1,6 @@
 About
 ============
-This module allows the user to create a Customer Note on order lines, from POS Interface,
- to be shown on receipt and invoice.
+This module allows to add cash In/Out popup
 
 Installation
 ============

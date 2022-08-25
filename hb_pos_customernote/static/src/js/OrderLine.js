@@ -6,15 +6,15 @@ odoo.define('hb_pos_customernote.Orderline', function(require) {
     const Orderline = require('point_of_sale.Orderline');
 
 
-     const PsiOrderline = Orderline => class  extends Orderline{
+     const HbOrderline = Orderline => class  extends Orderline{
 
         get customerNote() {
             return this.props.line.get_customer_note();
         }
     }
 
-     Registries.Component.extend(Orderline, PsiOrderline);
+     Registries.Component.extend(Orderline, HbOrderline);
 
 
-    return PsiOrderline;
+    return HbOrderline;
 });

@@ -8,7 +8,7 @@ odoo.define('hb_pos_customernote.OrderlineDetails', function (require) {
     const OrderlineDetails = require('point_of_sale.OrderlineDetails');
 
 
-     const PsiOrderlineDetails = OrderlineDetails => class  extends OrderlineDetails{
+     const HbOrderlineDetails = OrderlineDetails => class  extends OrderlineDetails{
          constructor() {
             super(...arguments);
         }
@@ -19,8 +19,8 @@ odoo.define('hb_pos_customernote.OrderlineDetails', function (require) {
 
     }
 
-    Registries.Component.extend(OrderlineDetails, PsiOrderlineDetails);
+    Registries.Component.extend(OrderlineDetails, HbOrderlineDetails);
 
 
-    return PsiOrderlineDetails;
+    return HbOrderlineDetails;
 });

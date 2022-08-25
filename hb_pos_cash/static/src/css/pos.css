@@ -1,0 +1,84 @@
+.cash-move-button {
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    font-size: medium;
+    color: white;
+}
+
+.cash-move-button:hover {
+    background: rgb(104,69,95);
+
+    cursor: pointer;
+}
+
+ .pos .notification {
+    min-width: 250px;
+    max-width: 500px;
+    background-color: #333333AA;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 5%;
+    font-size: 17px;
+}
+
+
+
+.cash-move {
+    display: flex;
+    flex-flow: column;
+}
+
+.cash-move .input-amount {
+    display: flex;
+    flex-flow: row;
+}
+
+.cash-move .input-amount .input-type {
+    height: 40px;
+    line-height:40px;
+    text-align:center;
+    border-radius: 2px;
+    padding: 0 12px;
+    margin-right: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border: solid 1px rgba(60,60,60,0.1);
+    background: rgba(0,0,0,0.05);
+    white-space: nowrap;
+}
+
+.cash-move .input-amount .input-type.highlight {
+    background: #6EC89B !important;
+    border: solid 1px #64AF8A !important;
+    color: white !important;
+}
+
+.cash-move .input-amount input {
+    width: 200px;
+    min-height: auto;
+    text-align: right;
+    padding-right: 30px;
+}
+
+.cash-move .input-amount .input-field span.currency {
+    position: relative;
+    left: -30px;
+}
+
+.cash-move textarea {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.cash-move .error-message {
+    color: rgb(197, 52, 0);
+    text-align: left;
+    padding-left: 5px;
+}
